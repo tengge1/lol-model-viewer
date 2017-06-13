@@ -1,0 +1,31 @@
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    margin: 3px;
+}
+
+.left {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 600px;
+}
+
+.right {
+    position: absolute;
+    left: 620px;
+    top: 0;
+}
+
+.unselectable {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}

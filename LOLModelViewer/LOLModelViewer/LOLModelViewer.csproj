@@ -1,0 +1,590 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7B08C09A-C527-4AD4-9E09-6693C71A72F9}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LOLModelViewer</RootNamespace>
+    <AssemblyName>LOLModelViewer</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
+    <Content Include="resource\models\101_0.lanim" />
+    <Content Include="resource\models\101_0.lmesh" />
+    <Content Include="resource\models\102_0.lanim" />
+    <Content Include="resource\models\102_0.lmesh" />
+    <Content Include="resource\models\103_0.lanim" />
+    <Content Include="resource\models\103_0.lmesh" />
+    <Content Include="resource\models\104_0.lanim" />
+    <Content Include="resource\models\104_0.lmesh" />
+    <Content Include="resource\models\105_0.lanim" />
+    <Content Include="resource\models\105_0.lmesh" />
+    <Content Include="resource\models\106_0.lanim" />
+    <Content Include="resource\models\106_0.lmesh" />
+    <Content Include="resource\models\107_0.lanim" />
+    <Content Include="resource\models\107_0.lmesh" />
+    <Content Include="resource\models\10_0.lanim" />
+    <Content Include="resource\models\10_0.lmesh" />
+    <Content Include="resource\models\110_0.lanim" />
+    <Content Include="resource\models\110_0.lmesh" />
+    <Content Include="resource\models\111_0.lanim" />
+    <Content Include="resource\models\111_0.lmesh" />
+    <Content Include="resource\models\112_0.lanim" />
+    <Content Include="resource\models\112_0.lmesh" />
+    <Content Include="resource\models\113_0.lanim" />
+    <Content Include="resource\models\113_0.lmesh" />
+    <Content Include="resource\models\114_0.lanim" />
+    <Content Include="resource\models\114_0.lmesh" />
+    <Content Include="resource\models\115_0.lanim" />
+    <Content Include="resource\models\115_0.lmesh" />
+    <Content Include="resource\models\117_0.lanim" />
+    <Content Include="resource\models\117_0.lmesh" />
+    <Content Include="resource\models\119_0.lanim" />
+    <Content Include="resource\models\119_0.lmesh" />
+    <Content Include="resource\models\11_0.lanim" />
+    <Content Include="resource\models\11_0.lmesh" />
+    <Content Include="resource\models\120_0.lanim" />
+    <Content Include="resource\models\120_0.lmesh" />
+    <Content Include="resource\models\121_0.lanim" />
+    <Content Include="resource\models\121_0.lmesh" />
+    <Content Include="resource\models\122_0.lanim" />
+    <Content Include="resource\models\122_0.lmesh" />
+    <Content Include="resource\models\126_0.lanim" />
+    <Content Include="resource\models\126_0.lmesh" />
+    <Content Include="resource\models\127_0.lanim" />
+    <Content Include="resource\models\127_0.lmesh" />
+    <Content Include="resource\models\12_0.lanim" />
+    <Content Include="resource\models\12_0.lmesh" />
+    <Content Include="resource\models\131_0.lanim" />
+    <Content Include="resource\models\131_0.lmesh" />
+    <Content Include="resource\models\133_0.lanim" />
+    <Content Include="resource\models\133_0.lmesh" />
+    <Content Include="resource\models\134_0.lanim" />
+    <Content Include="resource\models\134_0.lmesh" />
+    <Content Include="resource\models\136_0.lanim" />
+    <Content Include="resource\models\136_0.lmesh" />
+    <Content Include="resource\models\13_0.lanim" />
+    <Content Include="resource\models\13_0.lmesh" />
+    <Content Include="resource\models\143_0.lanim" />
+    <Content Include="resource\models\143_0.lmesh" />
+    <Content Include="resource\models\14_0.lanim" />
+    <Content Include="resource\models\14_0.lmesh" />
+    <Content Include="resource\models\150_0.lanim" />
+    <Content Include="resource\models\150_0.lmesh" />
+    <Content Include="resource\models\154_0.lanim" />
+    <Content Include="resource\models\154_0.lmesh" />
+    <Content Include="resource\models\157_0.lanim" />
+    <Content Include="resource\models\157_0.lmesh" />
+    <Content Include="resource\models\15_0.lanim" />
+    <Content Include="resource\models\15_0.lmesh" />
+    <Content Include="resource\models\161_0.lanim" />
+    <Content Include="resource\models\161_0.lmesh" />
+    <Content Include="resource\models\163_0.lanim" />
+    <Content Include="resource\models\163_0.lmesh" />
+    <Content Include="resource\models\164_0.lanim" />
+    <Content Include="resource\models\164_0.lmesh" />
+    <Content Include="resource\models\16_0.lanim" />
+    <Content Include="resource\models\16_0.lmesh" />
+    <Content Include="resource\models\17_0.lanim" />
+    <Content Include="resource\models\17_0.lmesh" />
+    <Content Include="resource\models\18_0.lanim" />
+    <Content Include="resource\models\18_0.lmesh" />
+    <Content Include="resource\models\19_0.lanim" />
+    <Content Include="resource\models\19_0.lmesh" />
+    <Content Include="resource\models\1_0.lanim" />
+    <Content Include="resource\models\1_0.lmesh" />
+    <Content Include="resource\models\201_0.lanim" />
+    <Content Include="resource\models\201_0.lmesh" />
+    <Content Include="resource\models\202_0.lanim" />
+    <Content Include="resource\models\202_0.lmesh" />
+    <Content Include="resource\models\203_0.lanim" />
+    <Content Include="resource\models\203_0.lmesh" />
+    <Content Include="resource\models\20_0.lanim" />
+    <Content Include="resource\models\20_0.lmesh" />
+    <Content Include="resource\models\21_0.lanim" />
+    <Content Include="resource\models\21_0.lmesh" />
+    <Content Include="resource\models\222_0.lanim" />
+    <Content Include="resource\models\222_0.lmesh" />
+    <Content Include="resource\models\223_0.lanim" />
+    <Content Include="resource\models\223_0.lmesh" />
+    <Content Include="resource\models\22_0.lanim" />
+    <Content Include="resource\models\22_0.lmesh" />
+    <Content Include="resource\models\236_0.lanim" />
+    <Content Include="resource\models\236_0.lmesh" />
+    <Content Include="resource\models\238_0.lanim" />
+    <Content Include="resource\models\238_0.lmesh" />
+    <Content Include="resource\models\23_0.lanim" />
+    <Content Include="resource\models\23_0.lmesh" />
+    <Content Include="resource\models\240_0.lanim" />
+    <Content Include="resource\models\240_0.lmesh" />
+    <Content Include="resource\models\245_0.lanim" />
+    <Content Include="resource\models\245_0.lmesh" />
+    <Content Include="resource\models\24_0.lanim" />
+    <Content Include="resource\models\24_0.lmesh" />
+    <Content Include="resource\models\254_0.lanim" />
+    <Content Include="resource\models\254_0.lmesh" />
+    <Content Include="resource\models\25_0.lanim" />
+    <Content Include="resource\models\25_0.lmesh" />
+    <Content Include="resource\models\266_0.lanim" />
+    <Content Include="resource\models\266_0.lmesh" />
+    <Content Include="resource\models\267_0.lanim" />
+    <Content Include="resource\models\267_0.lmesh" />
+    <Content Include="resource\models\268_0.lanim" />
+    <Content Include="resource\models\268_0.lmesh" />
+    <Content Include="resource\models\26_0.lanim" />
+    <Content Include="resource\models\26_0.lmesh" />
+    <Content Include="resource\models\27_0.lanim" />
+    <Content Include="resource\models\27_0.lmesh" />
+    <Content Include="resource\models\28_0.lanim" />
+    <Content Include="resource\models\28_0.lmesh" />
+    <Content Include="resource\models\29_0.lanim" />
+    <Content Include="resource\models\29_0.lmesh" />
+    <Content Include="resource\models\2_0.lanim" />
+    <Content Include="resource\models\2_0.lmesh" />
+    <Content Include="resource\models\30_0.lanim" />
+    <Content Include="resource\models\30_0.lmesh" />
+    <Content Include="resource\models\31_0.lanim" />
+    <Content Include="resource\models\31_0.lmesh" />
+    <Content Include="resource\models\32_0.lanim" />
+    <Content Include="resource\models\32_0.lmesh" />
+    <Content Include="resource\models\33_0.lanim" />
+    <Content Include="resource\models\33_0.lmesh" />
+    <Content Include="resource\models\34_0.lanim" />
+    <Content Include="resource\models\34_0.lmesh" />
+    <Content Include="resource\models\35_0.lanim" />
+    <Content Include="resource\models\35_0.lmesh" />
+    <Content Include="resource\models\36_0.lanim" />
+    <Content Include="resource\models\36_0.lmesh" />
+    <Content Include="resource\models\37_0.lanim" />
+    <Content Include="resource\models\37_0.lmesh" />
+    <Content Include="resource\models\38_0.lanim" />
+    <Content Include="resource\models\38_0.lmesh" />
+    <Content Include="resource\models\39_0.lanim" />
+    <Content Include="resource\models\39_0.lmesh" />
+    <Content Include="resource\models\3_0.lanim" />
+    <Content Include="resource\models\3_0.lmesh" />
+    <Content Include="resource\models\40_0.lanim" />
+    <Content Include="resource\models\40_0.lmesh" />
+    <Content Include="resource\models\412_0.lanim" />
+    <Content Include="resource\models\412_0.lmesh" />
+    <Content Include="resource\models\41_0.lanim" />
+    <Content Include="resource\models\41_0.lmesh" />
+    <Content Include="resource\models\420_0.lanim" />
+    <Content Include="resource\models\420_0.lmesh" />
+    <Content Include="resource\models\421_0.lanim" />
+    <Content Include="resource\models\421_0.lmesh" />
+    <Content Include="resource\models\427_0.lanim" />
+    <Content Include="resource\models\427_0.lmesh" />
+    <Content Include="resource\models\429_0.lanim" />
+    <Content Include="resource\models\429_0.lmesh" />
+    <Content Include="resource\models\42_0.lanim" />
+    <Content Include="resource\models\42_0.lmesh" />
+    <Content Include="resource\models\432_0.lanim" />
+    <Content Include="resource\models\432_0.lmesh" />
+    <Content Include="resource\models\43_0.lanim" />
+    <Content Include="resource\models\43_0.lmesh" />
+    <Content Include="resource\models\44_0.lanim" />
+    <Content Include="resource\models\44_0.lmesh" />
+    <Content Include="resource\models\45_0.lanim" />
+    <Content Include="resource\models\45_0.lmesh" />
+    <Content Include="resource\models\48_0.lanim" />
+    <Content Include="resource\models\48_0.lmesh" />
+    <Content Include="resource\models\497_0.lanim" />
+    <Content Include="resource\models\497_0.lmesh" />
+    <Content Include="resource\models\498_0.lanim" />
+    <Content Include="resource\models\498_0.lmesh" />
+    <Content Include="resource\models\4_0.lanim" />
+    <Content Include="resource\models\4_0.lmesh" />
+    <Content Include="resource\models\50_0.lanim" />
+    <Content Include="resource\models\50_0.lmesh" />
+    <Content Include="resource\models\51_0.lanim" />
+    <Content Include="resource\models\51_0.lmesh" />
+    <Content Include="resource\models\53_0.lanim" />
+    <Content Include="resource\models\53_0.lmesh" />
+    <Content Include="resource\models\54_0.lanim" />
+    <Content Include="resource\models\54_0.lmesh" />
+    <Content Include="resource\models\55_0.lanim" />
+    <Content Include="resource\models\55_0.lmesh" />
+    <Content Include="resource\models\56_0.lanim" />
+    <Content Include="resource\models\56_0.lmesh" />
+    <Content Include="resource\models\57_0.lanim" />
+    <Content Include="resource\models\57_0.lmesh" />
+    <Content Include="resource\models\58_0.lanim" />
+    <Content Include="resource\models\58_0.lmesh" />
+    <Content Include="resource\models\59_0.lanim" />
+    <Content Include="resource\models\59_0.lmesh" />
+    <Content Include="resource\models\5_0.lanim" />
+    <Content Include="resource\models\5_0.lmesh" />
+    <Content Include="resource\models\60_0.lanim" />
+    <Content Include="resource\models\60_0.lmesh" />
+    <Content Include="resource\models\61_0.lanim" />
+    <Content Include="resource\models\61_0.lmesh" />
+    <Content Include="resource\models\62_0.lanim" />
+    <Content Include="resource\models\62_0.lmesh" />
+    <Content Include="resource\models\63_0.lanim" />
+    <Content Include="resource\models\63_0.lmesh" />
+    <Content Include="resource\models\64_0.lanim" />
+    <Content Include="resource\models\64_0.lmesh" />
+    <Content Include="resource\models\67_0.lanim" />
+    <Content Include="resource\models\67_0.lmesh" />
+    <Content Include="resource\models\68_0.lanim" />
+    <Content Include="resource\models\68_0.lmesh" />
+    <Content Include="resource\models\69_0.lanim" />
+    <Content Include="resource\models\69_0.lmesh" />
+    <Content Include="resource\models\6_0.lanim" />
+    <Content Include="resource\models\6_0.lmesh" />
+    <Content Include="resource\models\72_0.lanim" />
+    <Content Include="resource\models\72_0.lmesh" />
+    <Content Include="resource\models\74_0.lanim" />
+    <Content Include="resource\models\74_0.lmesh" />
+    <Content Include="resource\models\75_0.lanim" />
+    <Content Include="resource\models\75_0.lmesh" />
+    <Content Include="resource\models\76_0.lanim" />
+    <Content Include="resource\models\76_0.lmesh" />
+    <Content Include="resource\models\77_0.lanim" />
+    <Content Include="resource\models\77_0.lmesh" />
+    <Content Include="resource\models\78_0.lanim" />
+    <Content Include="resource\models\78_0.lmesh" />
+    <Content Include="resource\models\79_0.lanim" />
+    <Content Include="resource\models\79_0.lmesh" />
+    <Content Include="resource\models\7_0.lanim" />
+    <Content Include="resource\models\7_0.lmesh" />
+    <Content Include="resource\models\80_0.lanim" />
+    <Content Include="resource\models\80_0.lmesh" />
+    <Content Include="resource\models\81_0.lanim" />
+    <Content Include="resource\models\81_0.lmesh" />
+    <Content Include="resource\models\82_0.lanim" />
+    <Content Include="resource\models\82_0.lmesh" />
+    <Content Include="resource\models\83_0.lanim" />
+    <Content Include="resource\models\83_0.lmesh" />
+    <Content Include="resource\models\84_0.lanim" />
+    <Content Include="resource\models\84_0.lmesh" />
+    <Content Include="resource\models\85_0.lanim" />
+    <Content Include="resource\models\85_0.lmesh" />
+    <Content Include="resource\models\86_0.lanim" />
+    <Content Include="resource\models\86_0.lmesh" />
+    <Content Include="resource\models\89_0.lanim" />
+    <Content Include="resource\models\89_0.lmesh" />
+    <Content Include="resource\models\8_0.lanim" />
+    <Content Include="resource\models\8_0.lmesh" />
+    <Content Include="resource\models\90_0.lanim" />
+    <Content Include="resource\models\90_0.lmesh" />
+    <Content Include="resource\models\91_0.lanim" />
+    <Content Include="resource\models\91_0.lmesh" />
+    <Content Include="resource\models\92_0.lanim" />
+    <Content Include="resource\models\92_0.lmesh" />
+    <Content Include="resource\models\96_0.lanim" />
+    <Content Include="resource\models\96_0.lmesh" />
+    <Content Include="resource\models\98_0.lanim" />
+    <Content Include="resource\models\98_0.lmesh" />
+    <Content Include="resource\models\99_0.lanim" />
+    <Content Include="resource\models\99_0.lmesh" />
+    <Content Include="resource\models\9_0.lanim" />
+    <Content Include="resource\models\9_0.lmesh" />
+    <Content Include="resource\models\bw_ironback_0.lanim" />
+    <Content Include="resource\models\bw_ironback_0.lmesh" />
+    <Content Include="resource\models\bw_ocklepod_0.lanim" />
+    <Content Include="resource\models\bw_ocklepod_0.lmesh" />
+    <Content Include="resource\models\bw_plundercrab_0.lanim" />
+    <Content Include="resource\models\bw_plundercrab_0.lmesh" />
+    <Content Include="resource\models\kingporo_0.lanim" />
+    <Content Include="resource\models\kingporo_0.lmesh" />
+    <Content Include="resource\models\kingporo_porofollower_0.lanim" />
+    <Content Include="resource\models\kingporo_porofollower_0.lmesh" />
+    <Content Include="resource\models\sightward_0.lanim" />
+    <Content Include="resource\models\sightward_0.lmesh" />
+    <Content Include="resource\models\sru_baron_0.lanim" />
+    <Content Include="resource\models\sru_baron_0.lmesh" />
+    <Content Include="resource\models\sru_crab_0.lanim" />
+    <Content Include="resource\models\sru_crab_0.lmesh" />
+    <Content Include="resource\models\sru_dragon_0.lanim" />
+    <Content Include="resource\models\sru_dragon_0.lmesh" />
+    <Content Include="resource\models\sru_dragon_air_0.lanim" />
+    <Content Include="resource\models\sru_dragon_air_0.lmesh" />
+    <Content Include="resource\models\sru_dragon_earth_0.lanim" />
+    <Content Include="resource\models\sru_dragon_earth_0.lmesh" />
+    <Content Include="resource\models\sru_dragon_elder_0.lanim" />
+    <Content Include="resource\models\sru_dragon_elder_0.lmesh" />
+    <Content Include="resource\models\sru_dragon_fire_0.lanim" />
+    <Content Include="resource\models\sru_dragon_fire_0.lmesh" />
+    <Content Include="resource\models\sru_dragon_water_0.lanim" />
+    <Content Include="resource\models\sru_dragon_water_0.lmesh" />
+    <Content Include="resource\models\sru_gromp_0.lanim" />
+    <Content Include="resource\models\sru_gromp_0.lmesh" />
+    <Content Include="resource\models\sru_murkwolf_0.lanim" />
+    <Content Include="resource\models\sru_murkwolf_0.lmesh" />
+    <Content Include="resource\models\sru_red_0.lanim" />
+    <Content Include="resource\models\sru_red_0.lmesh" />
+    <Content Include="resource\models\tt_spiderboss_0.lanim" />
+    <Content Include="resource\models\tt_spiderboss_0.lmesh" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="index.html" />
+    <Content Include="resource\css\viewer.css" />
+    <Content Include="resource\js\data.js" />
+    <Content Include="resource\js\jquery.js" />
+    <Content Include="resource\js\jquery.min.js" />
+    <Content Include="resource\js\modelviewer.js" />
+    <Content Include="resource\js\viewer.js" />
+    <Content Include="resource\textures\101\xerath_base_tx_cm.png" />
+    <Content Include="resource\textures\102\shyvana_base_tx_cm.png" />
+    <Content Include="resource\textures\103\ahri_base_tx_cm.png" />
+    <Content Include="resource\textures\104\graves.png" />
+    <Content Include="resource\textures\105\fizz_base_tx_cm.png" />
+    <Content Include="resource\textures\106\volibear_base_tx_cm.png" />
+    <Content Include="resource\textures\107\rengar_base_tx_cm.png" />
+    <Content Include="resource\textures\10\kayle_base_tx_cm.png" />
+    <Content Include="resource\textures\110\varus_base_tx_cm.png" />
+    <Content Include="resource\textures\111\nautilus_base_tx_cm.png" />
+    <Content Include="resource\textures\112\viktor_base_tx_cm.png" />
+    <Content Include="resource\textures\113\sejuani_base_tx_cm.png" />
+    <Content Include="resource\textures\114\fiora_base_tx_cm.png" />
+    <Content Include="resource\textures\115\ziggs_base_tx_cm.png" />
+    <Content Include="resource\textures\117\lulu_base_tx_cm.png" />
+    <Content Include="resource\textures\119\draven_base_tx_cm.png" />
+    <Content Include="resource\textures\11\masteryi_2013_tx_cm.png" />
+    <Content Include="resource\textures\120\hecarim_base_tx_cm.png" />
+    <Content Include="resource\textures\122\darius_base_tx_cm.png" />
+    <Content Include="resource\textures\126\jayce_base_melee_tx_cm.png" />
+    <Content Include="resource\textures\127\lissandra_base_tx_cm.png" />
+    <Content Include="resource\textures\12\alistar_base_tx_cm.png" />
+    <Content Include="resource\textures\131\diana_base_tx_cm.png" />
+    <Content Include="resource\textures\133\quinn_base_tx_cm.png" />
+    <Content Include="resource\textures\134\syndra_base_tx_cm.png" />
+    <Content Include="resource\textures\136\aurelionsol_body_tx_cm.png" />
+    <Content Include="resource\textures\13\ryze.png" />
+    <Content Include="resource\textures\143\zyra_base_tx_cm.png" />
+    <Content Include="resource\textures\14\sion_base_tx_cm.png" />
+    <Content Include="resource\textures\150\gnar_base_tx_cm.png" />
+    <Content Include="resource\textures\154\zac_base_tx_cm.png" />
+    <Content Include="resource\textures\157\yasuo_base_tx_cm.png" />
+    <Content Include="resource\textures\15\sivir.png" />
+    <Content Include="resource\textures\161\velkoz_base.png" />
+    <Content Include="resource\textures\163\taliyah_base_tx_cm.png" />
+    <Content Include="resource\textures\164\camille_base_tx_cm.png" />
+    <Content Include="resource\textures\16\soraka_base_tx_cm.png" />
+    <Content Include="resource\textures\17\teemo.png" />
+    <Content Include="resource\textures\18\tristana_tx_cm.png" />
+    <Content Include="resource\textures\19\warwick_base_cm_tx.png" />
+    <Content Include="resource\textures\1\annie_base_2012_cm.png" />
+    <Content Include="resource\textures\201\braum_base_tx_cm.png" />
+    <Content Include="resource\textures\202\jhin_base_tx_cm.png" />
+    <Content Include="resource\textures\203\kindred_base_tx_cm.png" />
+    <Content Include="resource\textures\20\yeti.png" />
+    <Content Include="resource\textures\21\missfortune_base_tx_cm.png" />
+    <Content Include="resource\textures\222\jinx_base_tx_cm.png" />
+    <Content Include="resource\textures\223\tahmkench_base_tx_cm.png" />
+    <Content Include="resource\textures\22\ashe_base_2011_tx_cm.png" />
+    <Content Include="resource\textures\236\lucian_base_tx_cm.png" />
+    <Content Include="resource\textures\238\zed_base_tx_cm.png" />
+    <Content Include="resource\textures\23\tryndamere_base2011_tx_cm.png" />
+    <Content Include="resource\textures\240\kledmount_base_tx_cm.png" />
+    <Content Include="resource\textures\245\ekko_base_tx_cm.png" />
+    <Content Include="resource\textures\24\armsmaster_concept.png" />
+    <Content Include="resource\textures\254\vi_tx_cm.png" />
+    <Content Include="resource\textures\25\fallenangel.png" />
+    <Content Include="resource\textures\266\aatrox_base_tx_cm.png" />
+    <Content Include="resource\textures\267\nami_base_tx_cm.png" />
+    <Content Include="resource\textures\268\azir_base_tx_cm.png" />
+    <Content Include="resource\textures\26\chronokeeper.png" />
+    <Content Include="resource\textures\27\singed_tx_cm.png" />
+    <Content Include="resource\textures\28\rg_evelynn_clr.png" />
+    <Content Include="resource\textures\29\twitch_base_tx_cm.png" />
+    <Content Include="resource\textures\2\olaf.png" />
+    <Content Include="resource\textures\30\karthus_base_tx_cm.png" />
+    <Content Include="resource\textures\31\greenterror.png" />
+    <Content Include="resource\textures\32\sadmummy.png" />
+    <Content Include="resource\textures\33\armordillo.png" />
+    <Content Include="resource\textures\34\cryophoenix.png" />
+    <Content Include="resource\textures\35\jester.png" />
+    <Content Include="resource\textures\36\drmundo_base_tx_cm.png" />
+    <Content Include="resource\textures\37\sona_base_tx_cm.png" />
+    <Content Include="resource\textures\38\kassadin_base_tx_cm.png" />
+    <Content Include="resource\textures\39\irelia_base_tx_cm.png" />
+    <Content Include="resource\textures\3\galio_base_cm_tx.png" />
+    <Content Include="resource\textures\40\janna_base_tx_cm.png" />
+    <Content Include="resource\textures\412\thresh_base_tx_cm.png" />
+    <Content Include="resource\textures\41\gangplank_base_tx_cm.png" />
+    <Content Include="resource\textures\420\illaoi_base_tx_cm.png" />
+    <Content Include="resource\textures\421\reksai_base_tx_cm.png" />
+    <Content Include="resource\textures\427\ivern_base_tx_cm.png" />
+    <Content Include="resource\textures\429\kalista_base_tx_cm.png" />
+    <Content Include="resource\textures\42\corki.png" />
+    <Content Include="resource\textures\432\bard_base_tx_cm.png" />
+    <Content Include="resource\textures\43\karma_base_2012_cm.png" />
+    <Content Include="resource\textures\44\taric_base_tx_cm.png" />
+    <Content Include="resource\textures\45\veigar_turnaround_b.png" />
+    <Content Include="resource\textures\48\trundle_base_tx_cm.png" />
+    <Content Include="resource\textures\497\rakan_base_tx_cm.png" />
+    <Content Include="resource\textures\498\xayah_base_tx_cm.png" />
+    <Content Include="resource\textures\4\twistedfate_base_2012_cm.png" />
+    <Content Include="resource\textures\50\swain_base_tx_cm.png" />
+    <Content Include="resource\textures\51\caitlyn_base_tx_cm_v01.png" />
+    <Content Include="resource\textures\53\steamgolem.png" />
+    <Content Include="resource\textures\54\malphite.png" />
+    <Content Include="resource\textures\55\katarina_base_2012_tx_cm.png" />
+    <Content Include="resource\textures\56\nocturne_base_tx_cm.png" />
+    <Content Include="resource\textures\57\maokai_base_2014_tx_cm.png" />
+    <Content Include="resource\textures\58\renekton_base_tx_cm.png" />
+    <Content Include="resource\textures\59\jarvaniv_base_tx_cm.png" />
+    <Content Include="resource\textures\5\xenzhao_v2.png" />
+    <Content Include="resource\textures\60\elise_base_proxy_tx_cm.png" />
+    <Content Include="resource\textures\61\orianna_base_tx_cm.png" />
+    <Content Include="resource\textures\62\monkeyking_base_tx_cm_v02.png" />
+    <Content Include="resource\textures\63\brand_base_tx_cm.png" />
+    <Content Include="resource\textures\64\leesin_tx_cm.png" />
+    <Content Include="resource\textures\67\vayne_base_tx_cm.png" />
+    <Content Include="resource\textures\68\rumble_base_tx_cm.png" />
+    <Content Include="resource\textures\69\cassiopeia_base_tx_cm.png" />
+    <Content Include="resource\textures\6\urgot_base_tx_cm.png" />
+    <Content Include="resource\textures\72\skarner_base_tx_cm.png" />
+    <Content Include="resource\textures\74\heimerdinger_base_tx_cm.png" />
+    <Content Include="resource\textures\75\nasus.png" />
+    <Content Include="resource\textures\76\nidalee_base_2012_tx_cm.png" />
+    <Content Include="resource\textures\77\udyr.png" />
+    <Content Include="resource\textures\78\poppy_base_tx_cm.png" />
+    <Content Include="resource\textures\79\gragas.png" />
+    <Content Include="resource\textures\7\leblanc_base_tx_cm.png" />
+    <Content Include="resource\textures\80\pantheon.png" />
+    <Content Include="resource\textures\81\ezreal_prodigalexplorer.png" />
+    <Content Include="resource\textures\82\mordekaiser.png" />
+    <Content Include="resource\textures\83\yorick1_base_cm_tx.png" />
+    <Content Include="resource\textures\84\akali.png" />
+    <Content Include="resource\textures\85\kennen.png" />
+    <Content Include="resource\textures\86\garen_base_tx_cm.png" />
+    <Content Include="resource\textures\89\leona_base_tx_cm.png" />
+    <Content Include="resource\textures\8\vladimir_base_tx_cm.png" />
+    <Content Include="resource\textures\90\malzahar_tx_cm.png" />
+    <Content Include="resource\textures\91\talon_base_tx_cm.png" />
+    <Content Include="resource\textures\92\riven_base_tx_cm.png" />
+    <Content Include="resource\textures\96\kogmaw_tx_cm.png" />
+    <Content Include="resource\textures\98\shen_base_tx_cm.png" />
+    <Content Include="resource\textures\99\lux_base_cm_tx.png" />
+    <Content Include="resource\textures\9\fiddlesticks_clr.png" />
+    <Content Include="resource\textures\bw_ironback\bw_ironback_tx_cm.png" />
+    <Content Include="resource\textures\bw_ocklepod\bw_ocklepod_tx_cm.png" />
+    <Content Include="resource\textures\bw_plundercrab\bw_plundercrab_tx_cm.png" />
+    <Content Include="resource\textures\kingporo\king_poro_blue.png" />
+    <Content Include="resource\textures\kingporo_porofollower\followerporo.png" />
+    <Content Include="resource\textures\sightward\sightward.png" />
+    <Content Include="resource\textures\sru_baron\sru_baron_tx_cm.png" />
+    <Content Include="resource\textures\sru_crab\sru_crab_tx_cm.png" />
+    <Content Include="resource\textures\sru_dragon\sru_dragon_tx_cm.png" />
+    <Content Include="resource\textures\sru_dragon_air\sru_dragon_air_tx_cm.png" />
+    <Content Include="resource\textures\sru_dragon_earth\sru_dragon_earth_tx_cm.png" />
+    <Content Include="resource\textures\sru_dragon_elder\sru_dragon_elder_tx_cm.png" />
+    <Content Include="resource\textures\sru_dragon_fire\sru_dragon_fire_tx_cm.png" />
+    <Content Include="resource\textures\sru_dragon_water\sru_dragon_water_tx_cm.png" />
+    <Content Include="resource\textures\sru_gromp\sru_gromp_base_tx_cm.png" />
+    <Content Include="resource\textures\sru_murkwolf\sru_murkwolf.png" />
+    <Content Include="resource\textures\sru_red\sru_red.png" />
+    <Content Include="resource\textures\tt_spiderboss\tt_spiderboss_tx_cm.png" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>56756</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:56756/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>此项目引用这台计算机上缺少的 NuGet 程序包。使用 NuGet 程序包还原可下载这些程序包。有关详细信息，请参阅 http://go.microsoft.com/fwlink/?LinkID=322105。缺少的文件是 {0}。</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
