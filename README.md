@@ -4,3 +4,11 @@
 源码：https://github.com/tengge1/LOLModelViewer
 
 在线演示：https://tengge1.github.io/LOLModelViewer
+
+![image](https://github.com/tengge1/LOLModelViewer/blob/master/%E5%9B%BE%E7%89%87/%E5%9B%BE%E7%89%871.jpg)
+
+![image](https://github.com/tengge1/LOLModelViewer/blob/master/%E5%9B%BE%E7%89%87/%E5%9B%BE%E7%89%872.jpg)
+
+![image](https://github.com/tengge1/LOLModelViewer/blob/master/%E5%9B%BE%E7%89%87/%E5%9B%BE%E7%89%873.jpg)
+
+![image](https://github.com/tengge1/LOLModelViewer/blob/master/%E5%9B%BE%E7%89%87/%E5%9B%BE%E7%89%874.jpg)
