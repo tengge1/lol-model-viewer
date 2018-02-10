@@ -5,6 +5,8 @@
 
 在线演示：https://tengge1.github.io/lol-model-viewer
 
+编辑器（开发中）：https://github.com/tengge1/OpenSeaAI
+
 ![image](https://github.com/tengge1/lol-model-viewer/blob/master/%E5%9B%BE%E7%89%87/%E5%9B%BE%E7%89%871.jpg)
 
 ![image](https://github.com/tengge1/lol-model-viewer/blob/master/%E5%9B%BE%E7%89%87/%E5%9B%BE%E7%89%872.jpg)
