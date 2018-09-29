@@ -8,6 +8,8 @@
 
 模型代码来源：http://www.lolking.net/models
 
+支持的编辑器：https://github.com/tengge1/ShadowEditor
+
 ![image](%E5%9B%BE%E7%89%87/%E5%9B%BE%E7%89%871.jpg)
 
 ![image](%E5%9B%BE%E7%89%87/%E5%9B%BE%E7%89%872.jpg)
